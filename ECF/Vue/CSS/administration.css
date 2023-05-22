@@ -1,0 +1,70 @@
+/*Masquage par défaut du formulaire de modification d'images*/
+.undisplayed {
+    display: none;
+}
+
+/*Style et placement des formulaires et de leurs champs en mobile*/
+legend {
+    padding: 1.2rem;
+}
+
+.deleteImage, .modificationImages, .modifyHours, .customersLimit {
+    background: #000;
+}
+
+.modificationImages .imageInput {
+    margin: 1.2rem auto;
+    width: 70%;
+    border-radius: 0;
+}
+
+.deleteImage input, .modificationImages input, .modifyHours input, .customersLimit input {
+    display: block;
+    margin: 1.2rem auto;
+    width: 65%;
+    border-radius: 15px;
+    height: 2rem;
+}
+
+input[type=checkbox] {
+    margin-bottom: 3rem;
+}
+
+/*Augmentation de la marge haute des heures dans le pied de page*/
+.time {
+    margin-top: 5rem;
+}
+
+/*Passage à la version tablette/desktop*/
+@media screen and (min-width : 768px) {
+    /*Changement de tailles et replacement des formulaires et de leurs champs*/
+    .deleteImage, .modificationImages, .modifyHours, .customersLimit {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .radioAddImage {
+        margin-right: 2rem;
+    }
+
+    .radioModifyImage {
+        margin-left: 2rem;
+    }
+
+    .deleteImage input, .modificationImages input, .modifyHours input, .customersLimit input {
+        height: 2rem;
+        width: 50%;
+    }
+
+    button {
+        padding: 15px;
+        width: 30%;
+    }
+}
+
+/*Redimensionnement du champ d'import d'image*/
+@media screen and (min-width : 1024px) {
+    .modificationImages .imageInput {
+        width: 40%;
+    }
+}

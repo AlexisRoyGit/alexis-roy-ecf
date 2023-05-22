@@ -1,0 +1,51 @@
+/*Style du sous-titre*/
+.warning {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3rem;
+    color : #FFF
+}
+
+/*Style et placement du formulaire en mobile*/
+fieldset {
+    margin: 4rem 0;
+    background: #000;
+}
+
+legend {
+    padding: 1.2rem;
+}
+
+form input {
+    display: block;
+    margin: 1rem auto;
+    border-radius: 15px;
+    height: 2rem;
+    width: 65%;
+}
+
+/*Style et dimensions des boutons radios du formulaire*/
+form input[type='radio'] {
+    display : inline-block;
+    width: 1.2rem;
+    float: none;
+}
+
+/*Style des titres précédant les boutons radio*/
+.period {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+/*Passage à la version tablette/desktop*/
+@media screen and (min-width : 768px) {
+    /*Redimensionnement du formulaire et des ses champs*/
+    fieldset{
+        width: 60%;
+        margin: 4rem auto;
+    }
+
+    form input {
+        width: 60%;
+    }
+}

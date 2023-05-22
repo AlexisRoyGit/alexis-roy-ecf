@@ -1,0 +1,58 @@
+/*Masquage par défaut du formulaire d'inscription*/
+.undisplayed {
+    display: none;
+}
+
+/*Style des formulaires d'inscription et de connexion */
+legend {
+    padding: 1.2rem;
+}
+
+.connexion, .inscription {
+    position: relative;
+    top: 5vh;
+    background: #000;
+    margin-bottom: 5rem;
+}
+
+
+.connexion input, .inscription input {
+    display: block;
+    margin: 1rem auto;
+    width: 65%;
+    border-radius: 15px;
+    height: 2rem;
+}
+
+/*Passage à la version tablette/desktop*/
+@media screen and (min-width : 768px) {
+    /*Redimensionnment des formulaires et de leurs champs*/
+    .connexion, .inscription {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .connexion input, .inscription input {
+        width: 60%;
+    }
+
+    /*Augmentation de l'écart entre les boutons radio*/
+    .radioleft {
+       margin: 1.5rem 1.5rem 0 0;
+    }
+
+    .radioright {
+        margin: 1.5rem 0 0 1.5rem;
+    }
+
+    /*Augmentation de taille des boutons*/
+    button {
+        padding: 15px;
+        width: 30%;
+    }
+
+    /*Augmentation de la marge haute des heures dans le pied de page*/
+    .time {
+        margin-top: 5rem;
+    }
+}

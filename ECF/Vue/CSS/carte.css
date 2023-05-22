@@ -1,0 +1,64 @@
+/*Placement des éléments de la carte en mobile*/
+.carte, .drinks {
+    text-align: left;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+}
+
+/*Style différent pour les sous-titres*/
+.subheading {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 3rem;
+    color: white;
+}
+
+/*Changement de couleur pour les noms de plats et leur prix*/
+.name {
+    color: #C84630;
+}
+
+.price {
+    color: white;
+    font-size: 18px;
+}
+
+/*Passage à la version tablette/desktop*/
+@media screen and (min-width : 768px) {
+    /*Changement de placement des éléments de la carte*/
+    .carte {
+        display: grid;
+        grid-template: 600px / 32% 32% 32%;
+    }
+
+    .starter {
+        grid-column: 1 / 1;
+        margin-right: 2rem;
+    }
+
+    .course {
+        grid-column: 2 / 2;
+        margin-right: 2rem;
+    }
+
+    .dessert {
+        grid-column: 3 / 3;
+    }
+
+    .drinks {
+        text-align: center;
+    }
+}
+
+/*Recentrage des éléments de la carte*/
+@media screen and (min-width: 1024px) {
+    .carte {
+        margin-left: 4rem;
+    }
+}
+
+/*Recentrage des éléments de la carte*/
+@media screen and (min-width: 1440px) {
+    .carte {
+        margin-left: 6.5rem;
+    }
+}

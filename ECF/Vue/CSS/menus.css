@@ -1,0 +1,17 @@
+/*Changement de style pour les sous-titres*/
+.subheading {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 3rem;
+    color: white;
+}
+
+
+/*Changement de couleur pour les noms de plats et leur prix*/
+.name {
+    color: #C84630;
+}
+
+.price {
+    color: white;
+    font-size: 18px;
+}
