@@ -15,3 +15,9 @@ INSERT INTO clients VALUES (UUID(), 'clientemail@email.com', '$2y$10$MvdAQT2XPQs
 # Le hash correspond au mot de passe 'p4$$word'
 
 INSERT INTO reservation(id_reservation, date, hour, guests, allergies) VALUES (UUID(), '2023-05-27', '22:15', 2, 'Arachides'), (UUID(), '2023-05-29', '12:15', 3, 'Soja'), (UUID(), '2023-06-02', '21:00', 5, null);
+
+# Modification de la capacité des convives aux dates ci-dessus 
+
+UPDATE reservation SET limit_capacity = 98 WHERE date = '2023-05-27';
+UPDATE reservation SET limit_capacity = 97 WHERE date = '2023-05-29';
+UPDATE reservation SET limit_capacity = 95 WHERE date = '2023-06-02';
